@@ -1,0 +1,5 @@
+print("Количество школьников:")
+pupils = int(input())
+print("Количество яблок:")
+apples = int(input())
+print(apples // pupils, "яблок(a) досталось каждому школьнику")
