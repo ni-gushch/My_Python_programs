@@ -1,0 +1,18 @@
+n = list(map(int, input().split()))
+aL = set()
+bL = set()
+for i in range(n[0]):
+    temp = int(input())
+    aL.add(temp)
+for i in range(n[1]):
+    temp = int(input())
+    bL.add(temp)
+intersect = sorted(aL & bL)
+print(len(intersect))
+print(*intersect)
+a_b = sorted(aL - bL)
+print(len(a_b))
+print(*a_b)
+b_a = sorted(bL - aL)
+print(len(b_a))
+print(*b_a)
